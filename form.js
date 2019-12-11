@@ -1,8 +1,7 @@
-const form = document.querySelector('form');
+const form = document.getElementById('contact-form');
 
-form.addEventListener('submit', event => {
-  
-  document.forms['contact-form'].submit();
-  
+form.addEventListener('click', event => {
   event.preventDefault();
+  document.forms['contact-form'].submit();
+  console.log("Look it's working!!!");
 });
