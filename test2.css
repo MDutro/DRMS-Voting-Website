@@ -1,0 +1,414 @@
+/* Main page and common stylistic elements */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #e2e2e2;
+  font-family: "Noto Sans";
+  height: 100%;
+}
+
+main {
+  padding-bottom: 10%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+  text-decoration: none;
+}
+
+.titleBar {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  height: 5em;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+}
+
+.logoImg {
+  display: flex;
+  flex-shrink: 1;
+  height: auto;
+  max-width: 250px;
+}
+
+/* Social media links */
+.social {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+
+#fb {
+  display: block;
+  color: #3b5998;
+}
+
+#tw {
+  display: block;
+  color: #00aced;
+  margin-left: 10px; 
+}
+/* End social media links */
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3em;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 15em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gradient {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 95%), url('msWater.png');
+}
+
+.headerText {
+  display: inline-block;
+  margin: 0 0 0 5px;
+  color: #85ddec;
+  text-shadow: 2px 2px 2px #000000;
+  font-size: 2.0rem;
+}
+
+.tagline {
+  align-content: flex-end;
+  margin: 0;
+  margin-left: 5px;
+  color: #2bd1ee;
+  text-shadow: 2px 2px 2px #000000;
+  font-size: 1rem;
+}
+
+.footer {
+  background-color: #222;
+  padding: 5px 0 5px 0;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 11px;
+  line-height: 20px;
+  color: #f2f2f2;
+  margin: 5px 2%;
+}
+
+/* Nav menu */
+@media screen and (max-width: 60em) {
+  .nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.75);  
+  color: white;
+  height: 350px;
+  width: 0;
+  transition: 0.3s;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  border-bottom-left-radius: 10px;
+  white-space: nowrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  }
+
+  .navBtn {
+    display: flex;
+    align-self: center;
+    padding-right: 5px;
+  }
+
+  .nav-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  .clsBtn {
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 3px;
+    font-size: 0.95em;
+    font-weight: 400;
+  }
+}
+
+/* Card layout */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 8px 16px 0 rgba(2, 2, 2, 0.2);
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cardText {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+/* Voting Matters page style elements */
+.articleTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.articleTitle h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.article {
+  display: grid;
+  grid-gap:  1.5rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.article p {
+  font-size: 1rem;
+}
+
+.article .img {
+  border-radius: 10px;
+}
+
+.video {
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+
+.video iframe {
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Know Your Rights style elements */
+p {
+  font-size: 1.25rem;
+}
+
+ul {
+  font-size: 1.25rem;
+}
+
+.panels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+
+}
+
+.panel {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 8px 16px 0 rgba(2, 2, 2, 0.2);
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 5px 5px 5px 5px;
+}
+
+.imgContainer {
+  display: flex;
+  margin: auto;
+  width: 85%;
+  margin-bottom: 10px;
+}
+
+.imgContainer img {
+  width: 60%;
+  min-width: 306px;;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Media query - breaks on screens larger than iPad Pro portrait orientation */
+@media screen and (min-width: 60em) {
+  .logoImg {
+    display: flex;
+    flex-shrink: 1;
+    /* width:100%; */
+    height: auto;
+    max-width: 347px;
+    min-width: 250px;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    display: flex;
+    align-content: flex-start;
+    flex: 0 1 calc(33% - 1em);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .headerText {
+    display: flex;
+    margin: 0 0 0 5px;
+    color: #85ddec;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 2.5rem;
+    padding-left: 15px;
+  }
+
+  .tagline {
+    display: flex;
+    align-content: flex-end;
+    margin: 0;
+    margin-left: 5px;
+    color: #2bd1ee;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 1.5rem;
+    padding-left: 15px;
+  }
+
+  .footer {
+    background-color: #222;
+    padding: 5px 0 5px 0;
+  }
+  
+  .footer p {
+    text-align: center;
+    font-size: 11px;
+    line-height: 20px;
+    color: #f2f2f2;
+    margin: 5px 2%;
+  }
+  
+  /* Responsive nav menu */
+   .nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    /* max-width: 48%; */
+    font-size: 16px;
+    overflow: hidden;
+    margin: 0;
+    flex-wrap: nowrap;
+    padding-left: 0;
+  }
+
+  .nav-menu a {
+    display: flex;
+    justify-content: center;
+    color: black;
+    /* text-decoration: underline;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
+    padding: 2em 5px;
+    flex-wrap: nowrap;
+  }
+
+  .clsBtn {
+    display: none;
+  }
+
+  .nav-menu a:hover {
+    background-color: #2bd1ee;
+    color: white;
+    /* padding: 2em 3px 2em 3px; */
+  } 
+
+  .navBtn {   
+    display: none;
+  }
+
+  /* Voting Matters/Plan to Vote page media query styles */
+  .article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:  1.5rem;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .article p {
+    font-size: 1.5rem;
+  }
+
+  /*  Know Your Rights page media query styles */
+  .panel {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex: 0 1 calc(50% - 1em);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 0 3px 0 3px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    font-size: 1.5rem;
+  }
+}
+  
+
+ 

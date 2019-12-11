@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+}
+
+.header {
+  height: 7em;
+  width: 100%;
+  background-image: url("msWater.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 3em;
+  
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 240px;
+  grid-template-rows: repeat(3, 12.5em);
+  row-gap: 20px;
+}
+
+.card {
+  height: 15em;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(212, 212, 212, 0.849);
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+@media screen and (min-width: 900px) {
+  html {
+    background: url("msWater.png") center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .header {
+    display: none;
+  }
+  
+  .wrapper {
+    width: auto;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    grid-template-rows: none;
+    column-gap: 45px;
+    row-gap: 20px;
+  }
+
+  .card {
+    height: 20em;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+}
