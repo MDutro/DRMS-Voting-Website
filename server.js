@@ -4,7 +4,6 @@ const path = require('path');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 app.use(express.static(__dirname + '/'));
-app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 
@@ -25,10 +24,12 @@ app.post('/contact', (req, res) => {
   });
 
   let mailOptions = {
-    from: `${req.body.firstName} ${req.body.lastName} ${req.body.email}`,
+    from: `${req.body.first} ${req.body.last} ${req.body.email}`,
     to: 'bac969003ab3f7@mailtrap.io',
     subject: "New Message",
-    text: `${req.body.message}, Telephone: ${req.body.telNum}`
+    text: `Name: ${req.body.first} ${req.body.last}
+    Telephone: ${req.body.phone}
+    ${req.body.message}`
   }
 
   transporter.sendMail(mailOptions, (err) => {
@@ -36,8 +37,8 @@ app.post('/contact', (req, res) => {
       console.error(err);
     } else {
       console.log('message sent');
-      res.status(200);
-      res.sendFile(path.join(__dirname + '/contact.html'));
+      res.status(200).send();
+      // res.sendFile(path.join(__dirname + '/contact.html'));
     }
   });
 });
