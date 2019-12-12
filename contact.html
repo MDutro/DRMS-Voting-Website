@@ -54,22 +54,23 @@
             <h2>Contact Us</h2>
             <form action="/contact" id="contact-form" method="post" role="form">
               <label for="firstName">First Name</label><br>
-              <input type="text" id="firstName" name="firstName"><br>
+              <input type="text" id="firstName" name="firstName" required><br>
               <br>
               <label for="lastName">Last Name</label><br>
-              <input type="text" id="lastName" name="lastName"><br>
+              <input type="text" id="lastName" name="lastName" required><br>
               <br>
               <label for="telNum">Telephone Number</label><br>
-              <input type="text" id="telNum" name="telNum"><br>
+              <input type="text" id="telNum" name="telNum" pattern="[0-9]{10,}" required><br>
               <br>
               <label for="email">Email Address</label><br>
-              <input type="email" id="email" name="email"><br>
+              <input type="email" id="email" name="email" required><br>
               <br>
               <label for="message">Message</label><br>
-              <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+              <textarea name="message" id="message" cols="30" rows="10" required></textarea><br>
               <br>
-              <button>Submit</button>
+              <button type="submit">Submit</button>
             </form>
+            <span></span>
           </div>
         </div>
       </div>

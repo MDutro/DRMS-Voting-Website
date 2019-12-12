@@ -28,8 +28,10 @@ app.post('/contact', (req, res) => {
     to: 'bac969003ab3f7@mailtrap.io',
     subject: "New Message",
     text: `Name: ${req.body.first} ${req.body.last}
-    Telephone: ${req.body.phone}
-    ${req.body.message}`
+
+Telephone: ${req.body.phone}
+
+${req.body.message}`
   }
 
   transporter.sendMail(mailOptions, (err) => {

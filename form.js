@@ -1,12 +1,6 @@
-// const form = document.getElementById('contact-form');
-
-// form.addEventListener('click', event => {
-//   event.preventDefault();
-//   document.forms['contact-form'].submit();
-//   console.log("Look it's working!!!");
-// });
-
 const form = document.getElementById('contact-form');
+const span = document.querySelector('span');
+
 let getFieldValue = name => {
     return form.querySelector(`[name=${name}]`).value;
   }
@@ -32,6 +26,10 @@ form.addEventListener('submit', e => {
     },
     body: JSON.stringify(data)
   }).then(response => {
-    console.log(response);
+    if (response.status === 200) {
+      span.innerHTML = '<p id="confirm">Message sent. You will be contacted by DRMS personnel within 3 business days.</p>'
+      form.reset();
+    }
+    
   }).catch(error => console.log(error))
 });
