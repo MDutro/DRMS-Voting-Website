@@ -381,9 +381,6 @@ textarea {
     display: flex;
     justify-content: center;
     color: black;
-    /* text-decoration: underline;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
     padding: 2em 5px;
     flex-wrap: nowrap;
   }
