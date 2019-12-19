@@ -1,8 +1,12 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const user = process.env.EMAIL_USER;
+const pass = process.env.EMAIL_PASS;
+const email = process.env.EMAIL_ADDRESS;
 app.use(express.static(__dirname + '/'));
 app.use(bodyParser.json());
 
@@ -18,14 +22,14 @@ app.post('/contact', (req, res) => {
     port: 465,
     secure: false,
     auth: {
-      user: 'bac969003ab3f7',
-      pass: '92fe3e3829db44'
+      user: user,
+      pass: pass
     }
   });
 
   let mailOptions = {
     from: `${req.body.first} ${req.body.last} ${req.body.email}`,
-    to: 'bac969003ab3f7@mailtrap.io',
+    to: email,
     subject: "New Message",
     text: `Name: ${req.body.first} ${req.body.last}
 
