@@ -5,7 +5,7 @@ This repo is for the new voting rights website for Disability Rights Mississippi
 
 The website is mostly static and is intended to provide information about voting for people with disabilities in Mississippi. Included are videos about the importance of voting from the perspective of people with disabilities, information about election law in the state, information about registering to vote, information about locating one's polling place, links to important state government websites regarding voting, and a form to contact Disability Rights Mississippi to request advocacy services, further information about voting, or even legal representation.
 
-All HTML, CSS and JavaScript on this website was written from scratch. The site is responsive and should work well on mobile devices. The server.js is written in Node.js and Express.js and uses nodemailer and body-parser packages to generate email messages from user submitted form data.
+All HTML, CSS and JavaScript on this website was written from scratch. The site is responsive and should work well on mobile devices. The server is written in Node.js and Express.js and uses nodemailer and body-parser packages to generate email messages from user submitted form data.
 
 This website is a work in progress and is currently under review for compliance with WCAG 2.0/2.1 guidelines. The site is expected to launch before the end of January, 2020.
 
