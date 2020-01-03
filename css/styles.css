@@ -137,6 +137,8 @@ a:hover, a:active, a:visited {
     display: flex;
     align-self: center;
     padding-right: 5px;
+    height: 42px;
+    width: 42px;
   }
 
   .nav-menu a {
@@ -147,12 +149,17 @@ a:hover, a:active, a:visited {
     padding-left: 20px;
   }
 
+  .navLine {
+    text-align: right;
+  }
+
   .clsBtn {
     text-align: right;
     padding-top: 15px;
-    padding-right: 3px;
+    padding-right: 5px;
     font-size: 0.95em;
     font-weight: 400;
+    height: 42px;
   }
 }
 
@@ -322,7 +329,6 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0;
   }
   
   .card {
