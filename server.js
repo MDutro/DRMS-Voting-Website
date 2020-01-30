@@ -18,9 +18,10 @@ app.get('/', (req, res) =>
 app.post('/contact', (req, res) => {
 
   const transporter = nodemailer.createTransport({
-    host: "smtp.mailtrap.io",
+    // host: "smtp.mailtrap.io",
+    host: "smtp.sendgrid.net",
     port: 465,
-    secure: false,
+    secure: true,
     auth: {
       user: user,
       pass: pass
