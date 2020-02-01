@@ -8,8 +8,6 @@ let getFieldValue = name => {
 form.addEventListener('submit', e => {
   e.preventDefault();
 
-  
-  
   let data = {
     first: getFieldValue('firstName'),
     last: getFieldValue('lastName'),
