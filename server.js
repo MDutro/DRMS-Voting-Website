@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const user = process.env.EMAIL_USER;
 const pass = process.env.EMAIL_PASS;
 const email = process.env.EMAIL_ADDRESS;
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 
 
