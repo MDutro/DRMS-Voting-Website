@@ -157,7 +157,7 @@ a:hover, a:active, a:visited {
 
   .clsBtn {
     text-align: right;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-right: 5px;
     font-size: 0.95em;
     font-weight: 400;
@@ -313,13 +313,13 @@ textarea {
 }
 
 .imgContainer {
-  display: flex;
   margin: auto;
   width: 85%;
   margin-bottom: 10px;
 }
 
 .imgContainer img {
+  display: flex;
   width: 60%;
   min-width: 306px;;
   margin: auto;

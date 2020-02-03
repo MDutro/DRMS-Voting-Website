@@ -7,13 +7,13 @@ const bodyParser = require('body-parser');
 const user = process.env.EMAIL_USER;
 const pass = process.env.EMAIL_PASS;
 const email = process.env.EMAIL_ADDRESS;
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
 app.use(bodyParser.json());
 
 
 // routes
 app.get('/', (req, res) => 
-  res.sendFile(path.join(__dirname + '/html/index.html')));
+  res.sendFile(path.join(__dirname, './drms-votes/public', 'index.html')));
 
 app.post('/contact', (req, res) => {
 
