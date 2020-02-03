@@ -36,7 +36,9 @@ app.post('/contact', (req, res) => {
 
 Telephone: ${req.body.phone}
 
-${req.body.message}`
+Email: ${req.body.email}
+
+Message: ${req.body.message}`
   }
 
   transporter.sendMail(mailOptions, (err) => {
