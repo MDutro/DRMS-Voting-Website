@@ -7,7 +7,7 @@ The website is mostly static and is intended to provide information about voting
 
 All HTML, CSS and JavaScript on this website was written from scratch. The site is responsive and should work well on mobile devices. The server is written in Node.js and Express.js and uses nodemailer and body-parser packages to generate email messages from user submitted form data.
 
-This website is a work in progress and is currently under review for compliance with WCAG 2.0/2.1 guidelines. The site is expected to launch before the end of January, 2020.
+This website is a work in progress and is currently under review for compliance with WCAG 2.0/2.1 guidelines. However, the current site is compatible with screen readers at a basic level, and is fully navigable via the keyboard.
 
 All images are created by Pixabay user mohamed_hassan and are free and open source. They appear (mostly) unedited. His pixabay page can be found at: https://pixabay.com/users/mohamed_hassan-5229782/
 
