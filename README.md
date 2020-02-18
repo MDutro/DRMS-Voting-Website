@@ -1,4 +1,4 @@
-Disability Right Mississippi Voting Rights Website.
+##Disability Right Mississippi Voting Rights Website.
 
 
 This repo is for the new voting rights website for Disability Rights Mississippi, a private non-profit organization with a federal mandate to advocate for the rights of people living with disabilities in Mississippi and protect them from abuse and neglect. This site will replace a current website on the same topic made in a WYSIWYG generator at SquareSpace.
