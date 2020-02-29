@@ -422,7 +422,7 @@ textarea {
   } 
 
   .navBtn {   
-    display: none !important;
+    display: none;
   }
 
   /* Voting Matters/Plan to Vote page media query styles */
